@@ -11,10 +11,10 @@ function getLocation() {
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
 
-    // var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
-    // +latlon+"&zoom=17&size=400x400&sensor=false&markers=size:small%7Ccolor:0x3ff9d2%7Clabel:0%7C"+latlon;
+    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=17&size=400x400&sensor=false&markers=size:small%7Ccolor:0x3ff9d2%7Clabel:0%7C"+latlon;
     document.getElementById("latlong").innerHTML = latlon;
-    // document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
 
 function showError(error) {
